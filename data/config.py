@@ -134,11 +134,11 @@ dataset_base = Config({
 dglass_dataset = dataset_base.copy({
     'name': 'dglass',
     
-    'train_images': './dataset/images/',
-    'train_info':   './dataset/annotations/instances_Train.json',
+    'train_images': './data/dataset/images/',
+    'train_info':   './data/dataset/annotations/instances_Train.json',
 
-    'valid_images': './dataset/images/',
-    'valid_info':   './dataset/annotations/instances_Validation.json',
+    'valid_images': './data/dataset/images/',
+    'valid_info':   './data/dataset/annotations/instances_Validation.json',
 
     'has_gt': True,
     'class_names': DGLASS_CLASSES,
