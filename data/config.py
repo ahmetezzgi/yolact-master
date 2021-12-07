@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@ahmetezzgi 
-dbolya
-/
-yolact
-Public
-106
-4k1.1k
-Code
-Issues
-310
-Pull requests
-15
-Actions
-Projects
-Wiki
-Security
-Insights
-yolact/data/config.py /
-@dbolya
-dbolya YOLACT++ clean up and full release.
-Latest commit 33912fb on 17 Dec 2019
- History
- 3 contributors
-@dbolya@Agade09@chongzhou96
-826 lines (628 sloc)  30.4 KB
-   
 from backbone import ResNetBackbone, VGGBackbone, ResNetBackboneGN, DarkNetBackbone
 from math import sqrt
 import torch
@@ -875,16 +842,3 @@ def set_dataset(dataset_name:str):
     """ Sets the dataset of the current config. """
     cfg.dataset = eval(dataset_name)
     
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
