@@ -141,7 +141,7 @@ dglass_dataset = dataset_base.copy({
     'valid_info':   './dataset/annotations/instances_Validation.json',
 
     'has_gt': True,
-    'class_names': ('ekstrem_sivi', 'catlak')
+    'class_names': DGLASS_CLASSES,
 
     'label_map': DGLASS_LABEL_MAP
 })
