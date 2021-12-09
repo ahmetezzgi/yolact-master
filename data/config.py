@@ -679,7 +679,7 @@ yolact_base_config = coco_base_config.copy({
     'num_classes': len(dglass_dataset.class_names) + 1,
 
     # Image Size
-    'max_size': 240,
+    'max_size': 512,
     
     # Training params
     'lr_steps': (7000, 15000, 17500, 18750),
