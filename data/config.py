@@ -676,7 +676,7 @@ yolact_base_config = coco_base_config.copy({
 
     # Dataset stuff
     'dataset': dglass_dataset,
-    'num_classes': 2,
+    'num_classes': len(dglass_dataset.class_names) + 1,
 
     # Image Size
     'max_size': 550,
