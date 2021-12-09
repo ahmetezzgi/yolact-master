@@ -134,11 +134,11 @@ dataset_base = Config({
 dglass_dataset = dataset_base.copy({
     'name': 'dglass',
     
-    'train_images': './dataset/images/',
-    'train_info':   './dataset/annotations/instances_Train.json',
+    'train_images': './data/dataset/images/',
+    'train_info':   './data/dataset/annotations/instances_Train.json',
 
-    'valid_images': './dataset/images/',
-    'valid_info':   './dataset/annotations/instances_Validation.json',
+    'valid_images': './data/dataset/images/',
+    'valid_info':   './data/dataset/annotations/instances_Validation.json',
 
     'has_gt': True,
     'class_names': DGLASS_CLASSES,
@@ -679,11 +679,11 @@ yolact_base_config = coco_base_config.copy({
     'num_classes': len(dglass_dataset.class_names) + 1,
 
     # Image Size
-    'max_size': 550,
+    'max_size': 512,
     
     # Training params
-    'lr_steps': (280000, 600000, 700000, 750000),
-    'max_iter': 800000,
+    'lr_steps': (7000, 15000, 17500, 18750),
+    'max_iter': 20000,
     
     # Backbone Settings
     'backbone': resnet101_backbone.copy({
