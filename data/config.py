@@ -833,7 +833,7 @@ def set_cfg(config_name:str):
 
     # Note this is not just an eval because I'm lazy, but also because it can
     # be used like ssd300_config.copy({'max_size': 400}) for extreme fine-tuning
-    cfg.replace(eval(config_name))
+    #cfg.replace(eval(config_name))
 
     if cfg.name is None:
         cfg.name = config_name.split('_config')[0]
