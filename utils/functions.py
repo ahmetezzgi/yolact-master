@@ -115,17 +115,20 @@ class SavePath:
     def from_str(path:str):
         file_name = os.path.basename(path)
         
-        if file_name.endswith('.pth'):
-            file_name = file_name[:-4]
+        #if file_name.endswith('.pth'):
+            #file_name = file_name[:-4]
         
-        params = file_name.split('_')
+        #params = file_name.split('_')
 
-        if file_name.endswith('interrupt'):
-            params = params[:-1]
+        #if file_name.endswith('interrupt'):
+            #params = params[:-1]
         
-        model_name = '_'.join(params[:-2])
-        epoch = params[-2]
-        iteration = params[-1]
+       #model_name = '_'.join(params[:-2])
+        model_name = 'modeltflite'
+        #epoch = params[-2]
+        epoch = 100
+        #iteration = params[-1]
+        iteration = 20000
         
         return SavePath(model_name, int(epoch), int(iteration))
 
